@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+    min-height:100vh;
+    padding:30px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+    animation:fadeIn .6s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* HEADER */
+.header{
+    margin-bottom:25px;
+}
+
+.header h2{
+    color:#1e293b;
+    margin-bottom:5px;
+}
+
+.header p{
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+/* BACK BUTTON */
+.back-btn{
+    display:inline-block;
+    padding:10px 16px;
+    border-radius:12px;
+    background:#e2e8f0;
+    color:#1e293b;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#cbd5f5;
+    transform:translateY(-2px);
+}
+
+/* TABLE BOX */
+.table-box{
+    overflow-x:auto;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+/* HEAD */
+thead{
+    background:#f1f5f9;
+}
+
+th{
+    padding:12px;
+    text-align:left;
+    font-size:14px;
+    color:#334155;
+}
+
+/* BODY */
+td{
+    padding:12px;
+    border-top:1px solid #e2e8f0;
+    font-size:14px;
+    color:#1e293b;
+}
+
+/* ROW HOVER */
+tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* STATUS BADGE */
+.status{
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:12px;
+    font-weight:600;
+}
+
+/* DIPINJAM */
+.pinjam{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+/* DIKEMBALIKAN */
+.kembali{
+    background:#dcfce7;
+    color:#166534;
+}
+
+/* BUTTON KEMBALI */
+.btn-kembali{
+    padding:8px 12px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+    display:inline-block;
+    box-shadow:0 6px 15px rgba(37,99,235,0.3);
+}
+
+.btn-kembali:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(37,99,235,0.4);
+}
+
+/* EMPTY STATE */
+.empty{
+    text-align:center;
+    color:#64748b;
+    padding:20px;
+    font-style:italic;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{
+        padding:20px;
+    }
+
+    th, td{
+        font-size:13px;
+        padding:10px;
+    }
+
+    .btn-kembali{
+        font-size:12px;
+        padding:6px 10px;
+    }
+}

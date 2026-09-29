@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:270px;
+    min-height:100vh;
+    background:linear-gradient(180deg,#1d4ed8,#1e3a8a);
+    padding:30px 20px;
+    position:fixed;
+    color:white;
+    box-shadow:8px 0 25px rgba(0,0,0,0.12);
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:28px;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 18px;
+    margin-bottom:15px;
+    text-decoration:none;
+    color:white;
+    border-radius:14px;
+    transition:.3s;
+    background:rgba(255,255,255,0.05);
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,0.18);
+    padding-left:28px;
+}
+
+/* MAIN */
+.main{
+    margin-left:270px;
+    width:100%;
+    padding:35px;
+}
+
+/* TOPBAR */
+.topbar{
+    background:white;
+    padding:22px 30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topbar h1{
+    color:#1e293b;
+}
+
+.topbar span{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* WELCOME */
+.welcome{
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    color:white;
+    padding:35px;
+    border-radius:25px;
+    margin-bottom:30px;
+}
+
+.welcome h2{
+    margin-bottom:10px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+    border-left:5px solid #2563eb;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+/* INFO BOX */
+.section{
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   TABEL PENGAJUAN PENGEMBALIAN
+========================================= */
+
+.pengembalian-box {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    width: 100%;
+}
+
+.pengembalian-box h2 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.pengembalian-box p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+
+/* TABEL */
+
+.table-pengembalian {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+.table-pengembalian thead {
+    background: #2563eb;
+    color: white;
+}
+
+.table-pengembalian th {
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-pengembalian td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+}
+
+.table-pengembalian tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   TOMBOL TERIMA
+========================================= */
+
+.btn-terima {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.btn-terima:hover {
+    background: #15803d;
+}
+
+
+/* =========================================
+   TOMBOL TOLAK
+========================================= */
+
+.btn-tolak {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-tolak:hover {
+    background: #b91c1c;
+}
+
+
+/* =========================================
+   JIKA TIDAK ADA PENGAJUAN
+========================================= */
+
+.tidak-ada {
+    padding: 25px !important;
+    text-align: center !important;
+    color: #64748b !important;
+}

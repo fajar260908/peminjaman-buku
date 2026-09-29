@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+}
+
+/* NAVBAR SIMPLE */
+.navbar{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    padding:18px 40px;
+    box-shadow:0 8px 25px rgba(37,99,235,0.25);
+}
+
+.menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.menu-right a{
+    color:white;
+    text-decoration:none;
+    margin-left:12px;
+    padding:10px 16px;
+    border-radius:12px;
+    background:rgba(255,255,255,0.12);
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu-right a:hover{
+    background:rgba(255,255,255,0.25);
+    transform:translateY(-2px);
+}
+
+/* CONTAINER */
+.container{
+    max-width:1200px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#60a5fa,#2563eb);
+    color:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 30px rgba(37,99,235,0.3);
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:16px;
+    opacity:.95;
+}
+
+/* QUICK ACTION GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+/* CARD STYLE */
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+    border-left:5px solid #2563eb;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#1e293b;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#64748b;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+/* BUTTON LINK */
+.card a{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 16px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.card a:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#64748b;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:26px;
+    }
+
+    .menu{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .menu-right{
+        margin-top:10px;
+    }
+}

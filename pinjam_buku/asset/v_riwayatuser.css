@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc);
+    padding:30px;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    padding:30px;
+    border-radius:22px;
+    color:white;
+    margin-bottom:25px;
+    box-shadow:0 12px 30px rgba(37,99,235,0.3);
+}
+
+.header h2{
+    font-size:32px;
+    margin-bottom:5px;
+}
+
+.header p{
+    opacity:.9;
+}
+
+/* BUTTON */
+.menu{
+    margin-top:18px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 18px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.dashboard{
+    background:#0f172a;
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* TABLE BOX */
+.table-box{
+    background:white;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    overflow-x:auto;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+    color:white;
+}
+
+th,td{
+    padding:18px;
+    text-align:center;
+}
+
+tbody tr{
+    border-bottom:1px solid #e2e8f0;
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:#eff6ff;
+    transform:scale(1.01);
+}
+
+/* BADGE STATUS */
+.badge{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.pinjam{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.kembali{
+    background:#dcfce7;
+    color:#16a34a;
+}
+
+/* EMPTY */
+.empty{
+    padding:20px;
+    color:#64748b;
+    font-weight:bold;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    margin-top:25px;
+    color:#64748b;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    body{
+        padding:15px;
+    }
+
+    th,td{
+        padding:12px;
+        font-size:13px;
+    }
+}
