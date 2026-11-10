@@ -13,7 +13,7 @@ CREATE TABLE `buku` (
   `nama_buku` varchar(100) NOT NULL,
   `tanggal_rilis` date NOT NULL,
   `pencipta` varchar(150) NOT NULL,
-  `stok` varchar(100) NOT NULL,
+  `stok` int(100) NOT NULL,
   `mata_pelajaran` varchar(100) NOT NULL DEFAULT 'Umum',
   `kelas` varchar(20) NOT NULL DEFAULT 'Umum',
   `semester` varchar(10) NOT NULL DEFAULT 'Umum'
